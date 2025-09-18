@@ -1,0 +1,193 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  background: #0c0a16;
+  background-image: url(./img/to-do.jpg);
+  background-size: cover;
+  color: #362c2c;
+  line-height: 1.6;
+}
+
+/* Container principal */
+.app {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 50px;
+  color: #1b1a25;
+  background-color: #9ebdbd;
+  border-radius: 10px;
+}
+
+/* --------------------------
+  To-do List
+--------------------------- */
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.todo {
+  background: #98a0e9;
+  padding: 12px 16px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out;
+}
+
+.todo:hover {
+  transform: translateY(-2px);
+}
+
+.todo .content {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.todo .text {
+  font-weight: 500;
+}
+
+.todo .category {
+  color: #f7f0f0;
+  font-size: 0.9rem;
+}
+
+.todo button {
+  padding: 6px 10px;
+  margin-left: 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+button.complete {
+  background: #4caf50;
+  color: white;
+}
+
+button.complete:hover {
+  background: #43a047;
+}
+
+button.remove {
+  background: #f44336;
+  color: white;
+}
+
+button.remove:hover {
+  background: #e53935;
+}
+
+/* --------------------------
+  Formulário
+--------------------------- */
+.todo-form {
+  background: #8d93e2;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.todo-form h2 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  color: #0e1111;
+}
+
+.todo-form input,
+.todo-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #bbf09d;
+  font-size: 1rem;
+}
+
+.todo-form button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #051827;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.todo-form button:hover {
+  background: #8ab5e2;
+}
+
+/* --------------------------
+  Filtro e Busca
+--------------------------- */
+.search,
+.filter {
+  background: #8ab5e2;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.search input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #f7f0f0;
+}
+
+.filter-option {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.filter-option select,
+.filter-option button {
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.filter-option button {
+  background: #05edf5;
+  margin: 2px;
+  align-items: center;
+}
+
+.filter-option button:hover {
+  background: #9f9fe2;
+}
+
+.filter-option p{
+  color: #0c0a16;
+}
+
+
